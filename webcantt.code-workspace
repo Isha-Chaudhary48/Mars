@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../Java Script"
+    },
+    {
+      "path": "../gits"
+    },
+    {
+      "path": "../GGIITS"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "webcantt"
+  }
+}
