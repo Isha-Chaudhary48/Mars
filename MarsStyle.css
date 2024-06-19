@@ -12,59 +12,110 @@ body{
     
     
 }
-.NavBar{
-    background-color:black;
-    height:120px;
-    width:100%;
-    color:aliceblue ;
-    display: block;
-    text-align: center;
-    justify-content: space-evenly;
-    
- 
-}
-
-
-.InnerBox{
-    display:flex;
-    justify-content:space-between;
+.navbar{
+    width:95.35% ;
+    height: 90px;
+    background-color: black;
+    margin: auto;
+    padding: 35px;
+    display: flex;
     align-items: center;
-   height: 120px;
-   
-}
+    justify-content: space-between;
+    overflow: hidden;
 
-.SearchBox{
-    width:400px;
-    height:30px;
-    border-radius: 10px;
-    padding-left:15px;
+}
+.logo{
+    width: 140px;
    
-}
-.Logo
-{
-    height:120px;
-}
-#LogoImg{
-    height:100px;
-    width:auto;
-    margin-top: 15px;
+    cursor: pointer;
     
    
+   
 }
-.InnerBox,div{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left:20px;
+#searchbar{
+    width: 370px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 35px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+    
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background-color: #9007a2;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+
+}
+.navbar ul li:hover::after{
     width: 100%;
 
+
 }
 
 
-a{
-    text-decoration: none;
-    color: aliceblue;
-    padding: 5px 25px 5px 25px;
+
+
+button{
+    width:100px;
+    text-transform: uppercase;
+    
+    padding:15px 0;
+    border-radius: 25px;
+    margin:20px 10px;
+    border: 2px solid #9007a2;
+    font-weight:bolder;
+    background:transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+    
+   
+    
+
 }
+span{
+    background: #9007a2;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+    
+
+}
+button:hover{
+    border: none;
+}
+
+
 
 
 
@@ -177,10 +228,17 @@ Footer{
     height: 50px;
     width: 100%;
     background-color: rgb(97, 96, 96);
+    
     color:white;
      text-align: center;
      padding-top: 30px;
+     
     
+} 
+.FootPanel-1 a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 .FootPanel-2{
     height: 200px;
