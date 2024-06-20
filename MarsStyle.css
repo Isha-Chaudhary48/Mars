@@ -1,7 +1,7 @@
 
 *{
     margin: 0;
-    font-family: arial;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: border-box;;
 }
 body{
@@ -13,11 +13,11 @@ body{
     
 }
 .navbar{
-    width:95.35% ;
-    height: 90px;
-    background-color: black;
+    width:100% ;
+    height: 110px;
+    background-color:black;
     margin: auto;
-    padding: 35px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,9 +25,13 @@ body{
 
 }
 .logo{
-    width: 140px;
-   
+    width: 200px;
+    color: #9007a2;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: bold;
     cursor: pointer;
+    padding: 0 10px 10px 10px;
     
    
    
@@ -142,11 +146,7 @@ h1{
     font-size: 45px;;
     font-family: unset;
    padding-top: 80px;
-
-    
-    
-    
-       
+     
 }
 
 div,.header1{
@@ -248,4 +248,178 @@ Footer{
     text-align:center;
     
 }
+
+
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    
+    
+    
+
+}
+#check{
+    display: none;
+}
+/*---------------------- media query --------------------------------------------*/
+
+@media screen and (max-width: 600px){
+
+    h1{ 
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+        
+         
+    }
+
+    .navbar{
+        width:100% ;
+        height: 60px;
+        overflow-x: hidden;
+       
+        
+       
+    
+    }
+    .logo{
+        width: 100px;
+    
+    font-size: 20px;
+    line-height: 40px;
+    
+    
+    
+       
+    }
+
+    #searchbar{
+        width: 200px;
+        height: 25px;
+        
+    }
+    .navbar ul li{
+       
+        display: inline;
+        margin: 0 10px;
+        position: unset;
+    }
+    .navbar ul li a{
+        
+        font-size: 13px;
+          
+    }
+    
+    .MainBody
+{
+   width: fit-content;
+}
+.Heroimg{
+    object-fit: cover;
+    width: 100%;
+    height: 10%;
+    }
+
+
+h1{ 
+    height: 80px;
+    font-size: 25px;
+    font-family: unset;
+   padding-top: 80px;
+   line-height: 25px;
+     
+}
+
+
+
+.MainBody,div
+{
+    width: 100%;
+}
+
+
+img .Heroimg{
+object-fit: cover;
+width: 100%;
+height: 10%;
+}
+
+img:hover{
+   
+    background-color:#E2DFD0;
+    border-radius: 10px;
+}
+div{
+    margin: 0;
+}
+div.InnerBox{
+    margin: 0;
+}
+
+button{
+    width:50px;
+    text-transform: uppercase;
+    
+    padding:5px 0;
+    border-radius: 25px;
+    margin:20px 10px;
+    border: 2px solid #9007a2;
+    font-size: 10px;
+    
+    
+    
+   
+    
+
+}
+span{
+    background: #9007a2;
+    height: 100%;
+    width: 0;
+    border-radius: 12px;
+    position:absolute;
+   
+
+button:hover span{
+    width: 100%;
+    
+
+}
+button:hover{
+    border: none;
+}
+
+
+/* footer */
+
+
+Footer{
+    height: 120px;
+    width:100%;
+}
+.FootPanel-1{
+    height: 40px;
+    width: 100%;
+    
+    
+    
+} 
+
+.FootPanel-2{
+    height: 100px;
+    width:100%;
+    
+    
+}   
+}
+
+}
+
 
