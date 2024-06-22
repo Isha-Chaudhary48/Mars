@@ -4,21 +4,23 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border: border-box;
 }
+
 body {
-  width: 100%;
+  width: screen;
   background-color: aliceblue;
 }
 
 .navbar {
-  width: 100%;
+  width: screen;
   height: 110px;
   background-color: black;
-  margin: auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
+}
+
+.navbar ul {
+  margin-right: 2%;
 }
 
 .logo {
@@ -28,7 +30,7 @@ body {
   line-height: 80px;
   font-weight: bold;
   cursor: pointer;
-  padding: 0 10px 10px 20px;
+  padding: 0 10px 10px 5%;
 }
 
 #searchbar {
@@ -61,6 +63,7 @@ body {
   bottom: -10px;
   transition: 0.5s;
 }
+
 .navbar ul li:hover::after {
   width: 100%;
 }
@@ -107,26 +110,21 @@ button:hover {
 }
 
 .header1 {
-  display: block;
-  height: 80px;
-
-  text-align: center;
-}
-
-h1 {
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: aliceblue;
   background-color: #32012f;
   font-weight: bolder;
-  font-size: 45px;
   font-family: unset;
-  padding-top: 80px;
+  padding: 20px 0 20px 0;
 }
 
-div,
-.header1 {
-  margin-bottom: 50px;
+h1 {
+  font-size: 45px;
 }
+
 .MainBody,
 div {
   width: 100%;
@@ -134,16 +132,13 @@ div {
 
 .CarSet1 {
   display: flex;
-
   align-items: center;
   overflow-x: auto;
+  padding: 40px 0 40px 0;
 }
 
-.CarSet1 img {
-  /* border: 1px solid black; */
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
+.CarSet1 fig {
+  margin: 0 20px 0 20px;
 }
 
 figcaption {
@@ -158,26 +153,6 @@ figcaption {
   object-fit: cover;
   width: 100%;
   height: 10%;
-}
-
-img:hover {
-  background-color: #e2dfd0;
-  border-radius: 10px;
-}
-div {
-  margin: 0;
-}
-div.InnerBox {
-  margin: 0;
-}
-img.Heroimg {
-  margin: 0;
-  position: static;
-  border-radius: 0%;
-}
-.CarSet1,
-figure {
-  margin-bottom: 50px;
 }
 
 /* footer */
@@ -212,7 +187,7 @@ Footer {
   font-size: 30px;
   color: white;
   line-height: 80px;
-  margin-left: 25px;
+  margin-right: 25px;
   cursor: pointer;
   display: none;
   float: right;
@@ -292,11 +267,6 @@ Footer {
       line-height: 35px;
     }
 
-    .MainBody,
-    div {
-      width: 100%;
-    }
-
     img .Heroimg {
       object-fit: cover;
       width: 100%;
@@ -306,12 +276,6 @@ Footer {
     img:hover {
       background-color: #e2dfd0;
       border-radius: 10px;
-    }
-    div {
-      margin: 0;
-    }
-    div.InnerBox {
-      margin: 0;
     }
 
     /* footer */
@@ -339,12 +303,13 @@ Footer {
 
     display: block;
   }
-  ul {
+
+  .navbar ul {
     position: fixed;
     width: 100%;
     background-color: #9007a2;
     top: 80px;
-    left: -120%;
+    left: -100%;
     text-align: center;
     transition: all 0.5s;
   }
