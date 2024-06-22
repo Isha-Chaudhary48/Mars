@@ -296,7 +296,7 @@ Footer {
   }
 }
 
-@media (max-width: 1375px) {
+@media (max-width: 1380px) {
   .checkbtn {
     size: 30px;
     padding: 15px;
@@ -307,9 +307,9 @@ Footer {
   .navbar ul {
     position: fixed;
     width: 100%;
-    background-color: #9007a2;
+    background-color: #7a407a;
     top: 80px;
-    left: -100%;
+    left: -120%;
     text-align: center;
     transition: all 0.5s;
   }
@@ -322,6 +322,11 @@ Footer {
   .navbar ul li a {
     font-size: 17px;
     font-weight: bold;
+  }
+  button {
+    text-decoration: none;
+    border-radius: 0;
+    display: none;
   }
 
   a:hover,
